@@ -23,3 +23,12 @@ const numericFormatter = (template, str = '1234567890', i = 0) =>
   template.replace(/[a-z]/gi, () => str[i++ % str.length])
 
 // or
+
+function numericFormatter(template, num){
+  const number = num ? num.repeat(15).split('') : '1234567890'.repeat(3).split('')
+  return template.split(' ').map(nums =>
+    nums.replace(/[a-z]/gi, n =>
+      number.shift()
+    )
+  ).join(' ')
+}
