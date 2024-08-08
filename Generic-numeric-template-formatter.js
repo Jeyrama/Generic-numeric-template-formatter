@@ -15,3 +15,6 @@ A few examples:
   numericFormatter("+555 aaaa bbbb") === "+555 1234 5678"
   numericFormatter("xxxx yyyy zzzz") === "1234 5678 9012"
 */
+
+
+// Solution
