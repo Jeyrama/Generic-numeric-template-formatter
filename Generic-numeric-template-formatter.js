@@ -18,3 +18,7 @@ A few examples:
 
 
 // Solution
+
+const numericFormatter = (template, str = '1234567890', i = 0) =>
+  template.replace(/[a-z]/gi, () => str[i++ % str.length])
+
