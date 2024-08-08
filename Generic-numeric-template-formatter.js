@@ -22,3 +22,4 @@ A few examples:
 const numericFormatter = (template, str = '1234567890', i = 0) =>
   template.replace(/[a-z]/gi, () => str[i++ % str.length])
 
+// or
